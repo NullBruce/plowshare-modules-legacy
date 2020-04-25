@@ -199,7 +199,6 @@ zippyshare_upload() {
     SERVER=$(echo "$PAGE" | parse 'var[[:space:]]*server' "'\([^']*\)';")
     log_debug "Upload server $SERVER"
 
-    curl_setopt($ch, CURLOPT_POSTFIELDS, '...&private=checkbox');
     FORM_HTML=$(grep_form_by_id "$PAGE" 'upload_form') || return
     FORM_ACTION=$(echo "$FORM_HTML" | parse_form_action) || return
     FORM_UID=$(echo "$FORM_HTML" | parse_form_input_by_name 'uploadId') || return
