@@ -207,10 +207,10 @@ zippyshare_upload() {
         local NAME HASH
         NAME=$(parse_cookie 'zipname' < "$COOKIE_FILE")
         HASH=$(parse_cookie 'ziphash' < "$COOKIE_FILE")
-        FORM_DATA_AUTH="-F zipname=$NAME -F ziphash=$HASH"
+        FORM_DATA_AUTH="-F private=true -F zipname=$NAME -F ziphash=$HASH"
     fi
 
-    # Important: field order seems checked! zipname/ziphash go before Filedata!
+    # Important: field order seems checked! private/zipname/ziphash go before Filedata!
     PAGE=$(curl_with_log -F "uploadId=$FORM_UID" \
         $FORM_DATA_AUTH \
         -F "Filedata=@$FILE;filename=$DESTFILE" \
