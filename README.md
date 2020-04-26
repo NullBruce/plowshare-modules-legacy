@@ -119,7 +119,7 @@ yourvideohost|premium<br>[`--auth`]||||c
 zalaa|anonymous|anonymous<br>[`--description, --email-to, --link-password`]||x|c f s
 ziddu|anonymous :cookie:|account<br>[`--auth`]|||c f s
 zippyshare|anonymous :cookie:|account (Private upload included)<br>[`--auth`]||x|c f s
-(last update of this table: 2016-06-11; number of modules/supported hosters: 107)
+(last update of this table: 2020-04-26; number of modules/supported hosters: 107)
 <!-- === END MATRIX === -->
 Few notes:
 * "account" means that both "free" and "premium" accounts are supported.
