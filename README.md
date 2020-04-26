@@ -1,3 +1,11 @@
+## FORK
+
+This fork only maintain zippyshare's module.
+Link to the original repository: [Here](https://github.com/mcrapet/plowshare-modules-legacy/)
+## Changelog
+* Changed the file size limit from 200MB to 500MB.
+* Added "Private upload" when uploading with an account (require using -a option).
+
 ## Plowshare legacy modules matrix
 
 Here is current hosters support list:
@@ -110,7 +118,7 @@ vid_ag||account :lock: :recycle:<br>[`--private, --title, --description, --auth,
 yourvideohost|premium<br>[`--auth`]||||c
 zalaa|anonymous|anonymous<br>[`--description, --email-to, --link-password`]||x|c f s
 ziddu|anonymous :cookie:|account<br>[`--auth`]|||c f s
-zippyshare|anonymous :cookie:|account<br>[`--auth`]||x|c f s
+zippyshare|anonymous :cookie:|account (Private upload included)<br>[`--auth`]||x|c f s
 (last update of this table: 2016-06-11; number of modules/supported hosters: 107)
 <!-- === END MATRIX === -->
 Few notes:
